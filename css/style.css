@@ -18,15 +18,23 @@ a,button{outline-offset:2px}:focus-visible{outline:2px solid currentColor;outlin
 /* NAV */
 .nav{position:fixed;top:0;left:0;right:0;z-index:50;padding:14px 0;color:#fff;transition:.45s var(--ease)}
 .nav.solid{background:rgba(247,248,245,.86);color:var(--ink);border-bottom:1px solid rgba(11,16,13,.08);backdrop-filter:blur(20px)}
-.nav-inner{height:48px;display:flex;align-items:center}
-.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:16px;letter-spacing:-.045em}
+.nav-inner{height:60px;display:flex;align-items:center}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:20px;letter-spacing:-.045em}
+.brand-logo{height:54px;width:auto;display:block;object-fit:contain;border-radius:12px;background:rgba(255,255,255,0.05);padding:6px}
+.brand-logo-mark{height:48px;width:48px;display:block;object-fit:contain;border-radius:12px}
 .mark{width:29px;height:29px;border-radius:8px;background:var(--lime);display:grid;place-items:center;color:#102117;font-size:13px;font-weight:800}
+.nav .brand-logo{height:54px;width:auto;max-width:230px;display:block;object-fit:contain;border-radius:12px;background:rgba(255,255,255,0.05);padding:6px}
+.nav.solid .brand-logo-light{display:none}
+.nav.solid .brand-logo-dark{display:block}
+.nav:not(.solid) .brand-logo-dark{display:none}
+.nav:not(.solid) .brand-logo-light{display:block}
+.footer .brand-logo{height:58px;width:auto;max-width:240px;display:block;object-fit:contain;border-radius:12px;background:rgba(255,255,255,0.05);padding:6px}
 .nav-links{display:flex;gap:2px;margin:auto}
-.nav-links a,.nav-contact{font-size:12px;padding:9px 12px;border-radius:999px;color:rgba(255,255,255,.72)}
+.nav-links a,.nav-contact{font-size:15px;padding:10px 14px;border-radius:999px;color:rgba(255,255,255,.72)}
 .nav.solid .nav-links a,.nav.solid .nav-contact{color:#5c665f}
 .nav-links a:hover,.nav-contact:hover{background:rgba(255,255,255,.1)}
 .nav.solid .nav-links a:hover,.nav.solid .nav-contact:hover{background:#fff}
-.nav-cta{background:#fff;color:#0b100d!important;padding:10px 15px;border-radius:999px;font-size:12px;font-weight:650}
+.nav-cta{background:#fff;color:#0b100d!important;padding:11px 16px;border-radius:999px;font-size:14px;font-weight:650}
 .nav.solid .nav-cta{background:var(--ink);color:#fff!important}
 .mobile-menu{display:none;margin-left:auto;border:0;background:transparent;color:inherit;font-size:24px;min-width:44px;height:44px;padding:6px;border-radius:10px;cursor:pointer;transition:background .2s}
 .mobile-menu:hover,.mobile-menu:focus-visible{background:rgba(255,255,255,.1)}
